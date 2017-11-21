@@ -1,7 +1,6 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 
 import * as d3 from 'd3';
-var { spawn } = require('child_process');
 
 @Component({
   selector: 'app-root',
@@ -11,21 +10,6 @@ var { spawn } = require('child_process');
 export class AppComponent implements OnInit, AfterViewInit {
   title = 'app works!';
   ngOnInit() {
-
-    const bat = spawn('cmd.exe', ['/c', 'my.bat']);
-
-    bat.stdout.on('data', (data) => {
-      console.log(data.toString());
-    });
-
-    bat.stderr.on('data', (data) => {
-      console.log(data.toString());
-    });
-
-    bat.on('exit', (code) => {
-      console.log(`Child exited with code ${code}`);
-    });
-
 
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
