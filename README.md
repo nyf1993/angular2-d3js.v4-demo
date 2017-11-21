@@ -1,3 +1,9 @@
+angular2中使用d3.js的一个简单demo
+
+如需运行请先npm install
+
+然后ng serve -o即可
+
 # TestD3
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
